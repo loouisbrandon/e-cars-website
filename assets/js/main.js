@@ -98,7 +98,7 @@ function scrollActive(){
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector9('.nav__menu a[href*=' + sectionId +']').classList.add('active-link')
+            document.querySelector('.nav__menu a[href*=' + sectionId +']').classList.add('active-link')
         }else{
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
@@ -107,7 +107,7 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = scrollReveal({
+const sr = ScrollReveal({
     origin:'top',
     distance:'60px',
     duration: 2500,
